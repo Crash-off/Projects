@@ -7,7 +7,7 @@ portas = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38
 for port in portas:
     seta = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     seta.settimeout(0.1)
-    code = setagem.connect_ex((a, port))
+    code = seta.connect_ex((a, port))
     if code == 0:
         print("SITE:", a)
         print("OPEN PORTS:", port)
